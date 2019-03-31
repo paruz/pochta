@@ -1,0 +1,29 @@
+﻿{% extends "base.html" %}
+ 
+{% block content %}
+<div class="container" width ==70%>
+<form method='post'>
+<div class="form-group">
+                                    <h2><font color="#ffffff">Тема письма</font></h2>
+                                    <textarea class="form-control" id="title" rows="1" name="title"></textarea>
+                                </div>
+<div class="form-group">
+                                    <h3><font color="#ffffff">Ваше письмо</font></h3>
+                                    <textarea class="form-control" id="text" rows="5" name="text"></textarea>
+                                </div>
+<div class="form-group">
+                                    <h4><font color="#ffffff">Получатель</font></h4>
+                                    <textarea class="form-control" id="name" rows="1" name="name"></textarea>
+                                </div>
+<button type="submit" class="btn btn-primary">Отправить</button>
+</li>
+</div>
+</form>
+{% endblock %}
+
+
+
+
+
+
+

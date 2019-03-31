@@ -1,0 +1,14 @@
+﻿{% extends "base.html" %}
+ 
+{% block content %}
+<div class="container" width ==70%>
+<form method='post'>
+<h1 style="margin-top:50px"><font color="#ffffff">Добро пожаловать {{ user }}! С возвращением!</font></h1>
+  <a style="margin-top:20px" class="btn btn-primary" href="http://127.0.0.1:8080/sent_letter" role="button">Написать письмо</a>
+<button style="margin-left:1000px;margin-top:-40px" type="submit" class="btn btn-primary">Выход</button>
+{% for theme in themes %}
+<div><a href="main/{{ theme[0] }}"><big><big><big>{{ theme[1] }}</big></big></big></a></div>
+{% endfor %}
+</form>
+</div>
+{% endblock %}

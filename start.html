@@ -1,0 +1,54 @@
+﻿{% extends "base.html" %}
+ 
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Название</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:8080/login">Login<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:8080/registration">Register<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Наш проект</h1>
+    <p class="lead">*информация по проекту*</p>
+    <p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Переключить 1-ый элемент</a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Переключить 2-ой элемент</button>
+</p>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        *Текст*
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+        *Текст*
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+  <p class="lead">Зарегистрируйтесь на нашем сайте для отправки сообщений</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="http://127.0.0.1:8080/registration" role="button">Register</a>
+  </p>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+﻿{% extends "base.html" %}
+ 
+{% block content %}
+<form method='post'>
+  <div style="margin-left:50px;margin-top:50px"class="form-group">
+    <label for="email"><font color="#ffffff">Почтовый адрес</font></label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name='email'>
+    <small id="emailHelp1" class="form-text text-muted"><font color="#ffffff">We'll never share your email with anyone else.</font></small> </div>
+  <div style="margin-left:50px;margin-top:20px"class="form-group">
+    <label for="password">Пароль</label>
+    <input type="password" class="form-control" id="password" placeholder="Password" name='password'>
+  </div>
+  <button style="margin-left:50px;margin-top:20px" type="submit" class="btn btn-primary">Войти</button>
+  <a style="margin-left:10px;margin-top:20px" class="btn btn-primary" href="http://127.0.0.1:8080/registration" role="button">Зарегистрироваться</a>
+</form>
+{% endblock %}
